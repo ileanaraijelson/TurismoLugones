@@ -4,12 +4,14 @@
     
  }
 
- @import 'animate.css';
+
  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
 
  body{
     font-family: 'Roboto', sans-serif;
- }
+    background-color: #f5f3f3;
+}
+ 
 
 
  header{
@@ -21,42 +23,29 @@
     color: #FF6633;;
     cursor: pointer;
     text-decoration: none;
-}
-
-
-
-nav ul ol{
-    color:#FF6633;
-    display: inline-block;
-    position: relative;
-    font-size: 17px;
-    text-decoration: none;
-    margin-left: 37px;
-    margin-right: 174px;
-    margin-bottom: 20px;
-    margin-top: 15px;
-  
- 
     
-    
-}
 
-.flex__container{
+ }
+
+nav{
+    
    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-    justify-content: space-between; /*para row eje x para colom eje y */ 
-    align-items: center;  /*para row eje y para colum eje x*/
-    text-align: center;
+    font-size: 20px;
+    height: 100px;
+    padding: 20px;
+    color:#FF6633;
+  
 }
 
-.nav__logo{
-    margin-top: 10px;
+.navbar-light .navbar-nav .nav-link{
+    color: dimgrey;
 }
-nav ul ol :hover{
-    color: #FFCC33;
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF6633;
 }
+
+
 
 
 #slide img{
@@ -117,7 +106,7 @@ nav ul ol :hover{
 
 
 
-button{
+.destinos1__boton{
     width: 10%;
     height: 5%;
     margin: 20px;
@@ -127,10 +116,10 @@ button{
     background-color: #FF6633;
     border-width: 0px;
     transition: all 1s;
-   
+   color: #f5f3f3;
 }
 
-button:hover{
+.destinos1__boton:hover{
   
     
     
