@@ -41,11 +41,35 @@
         
     </header>
     
-    <div id="slide">
-        
-        <img src="./img/carrusel.png" alt="slide" class="slide__foto1"/>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carrusel.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel2.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
+    
+   
 
     <section id="destinos1">
      <h1 class="destinos1__titulo">Los destinos mas buscados</h1>
@@ -62,13 +86,13 @@
 
             <div class="button__contenedor">
                 <button  name="button" type="button" class="btn btn-secondary btn-sm destinos1__boton"><a href="./section/destinos.html">Ver mas destinos</a></button>
-            
+                
             </div>
     </section>
 
 
     <section id="publicidad">
-       <a href="https://www.mlugones.com/" target="_blank"> <img src="./img/publicidad.png " alt="publicidad" /></a>
+       <a href="https://www.mlugones.com/" target="_blank"><img src="./img/publicidad.png " class="img-fluid" alt="publicidad"></a>
     </section>
 
 

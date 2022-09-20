@@ -1,5 +1,5 @@
 * {
-    Margin:0;
+    Margin:8px;
     padding:0;
     
  }
@@ -14,11 +14,29 @@
  
 
 
- header{
+ nav{
     background-color: #f5f3f3;
+  
     
     
  }
+
+ .nav-link{
+    margin-left: 25px;
+    margin-right: 25px;
+ }
+
+ .navbar-collapse {
+    background-color: #f5f3f3;
+    margin: 8px -12px;
+    padding-left: 12px;
+}
+
+ #carouselExampleIndicators{
+    z-index: -1;
+ }
+
+ 
  a:-webkit-any-link {
     color: #FF6633;;
     cursor: pointer;
@@ -48,9 +66,6 @@ nav{
 
 
 
-#slide img{
-    width: 100%;
-}
 
 
 #destinos1{
@@ -336,10 +351,12 @@ footer{
 }
 
 .contacto{
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
+    
     
 }
 
@@ -393,6 +410,14 @@ footer{
      
       
     }
+    .contacto{
+        
+        grid-template-columns: 2fr 2fr ;
+        
+        
+        
+    }
+    
 
 
 }
@@ -411,6 +436,9 @@ footer{
       
     
     }
-
+    .contacto{
+        
+        grid-template-columns: 1fr ;
+        
   
 }
