@@ -1,59 +1,42 @@
 * {
     Margin:8px;
     padding:0;
-    
- }
+}
 
 
- @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
 
- body{
+body{
     font-family: 'Roboto', sans-serif;
     background-color: #f5f3f3;
 }
- 
-
-
- nav{
-    background-color: #f5f3f3;
-  
-    
-    
- }
-
- .nav-link{
-    margin-left: 25px;
-    margin-right: 25px;
- }
-
- .navbar-collapse {
-    background-color: #f5f3f3;
-    margin: 8px -12px;
-    padding-left: 12px;
-}
-
- #carouselExampleIndicators{
-    z-index: -1;
- }
-
- 
- a:-webkit-any-link {
-    color: #FF6633;;
-    cursor: pointer;
-    text-decoration: none;
-    
-
- }
 
 nav{
-    
-   
     font-size: 20px;
     height: 100px;
     padding: 20px;
     color:#FF6633;
-  
+    background-color: #f5f3f3;
 }
+
+
+.nav-link{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#carouselExampleIndicators{
+    z-index: -1;
+}
+
+
+a:-webkit-any-link {
+    color: #FF6633;;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
 
 .navbar-light .navbar-nav .nav-link{
     color: dimgrey;
@@ -82,7 +65,6 @@ nav{
 
 
 .destinos1__fotos{
-  
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
     justify-content: center;
@@ -116,7 +98,7 @@ nav{
     100%{
         opacity: 2;
     }
- 
+
 }
 
 
@@ -131,15 +113,13 @@ nav{
     background-color: #FF6633;
     border-width: 0px;
     transition: all 1s;
-   color: #f5f3f3;
+    color: #f5f3f3;
 }
 
 .destinos1__boton:hover{
-  
     
     
     background-color: #FF9933;
-   
 
 }
 
@@ -162,7 +142,6 @@ nav{
 
 #publicidad img{
     width: 100%;
-   
 }
 
 
@@ -202,7 +181,6 @@ nav{
 .info__bloque1 p{
     color: white;
     padding: 10px;
-  
     
 }
 
@@ -211,14 +189,13 @@ nav{
 
 
 
- form{
-   text-align: center;
-   padding-top: 30px;
-   padding-bottom: 30px;
-   color: white;
-   background-color: #FFCC33;
-  
-  
+form{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: #FFCC33;
+
 
 }
 
@@ -261,7 +238,7 @@ footer{
     margin-top: 15px;
     margin-bottom: 15px;
     width: 50%;
-  
+
 }
 
 .footer__bloque2{
@@ -326,9 +303,9 @@ footer{
     justify-content: center;
     align-items: center;
     justify-items: center;
-   padding: 3%;
+    padding: 3%;
 
-  
+
 }
 
 
@@ -386,9 +363,7 @@ footer{
 @media(max-width:990px){
 
     .destinos1__fotos{
-  
         grid-template-columns: 2fr 2fr;
-             
     }
     #info{
         
@@ -399,16 +374,13 @@ footer{
     }
 
     .destinos2__fotos{
-       
         grid-template-columns: 2fr 2fr;
-      
     
     }
     #nosotros{
         
         grid-template-columns: 1fr;
-     
-      
+
     }
     .contacto{
         
@@ -425,20 +397,17 @@ footer{
 @media(max-width:768px){
 
     .destinos1__fotos{
-  
+
         grid-template-columns: 1fr ;
-             
     }
 
     .destinos2__fotos{
-       
-        grid-template-columns: 1fr;
-      
+        grid-template-columns: 1fr; 
     
     }
     .contacto{
         
         grid-template-columns: 1fr ;
         
-  
+
 }
