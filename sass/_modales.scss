@@ -1,0 +1,34 @@
+.modal-header{
+    background-color: $colorprincipal;
+}
+
+.modal-title{
+    color: white;
+    
+}
+
+.modal-body img{
+    margin: auto;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.bajadamodal{
+    font-size: 20px;
+    color: $colorprincipal;
+}
+
+.botonmodal{
+    background-color: $colorprincipal;
+    color: $colorsecundario;
+    border: none;
+        &:hover{
+            background-color: orangered;
+        }
+}
+
+a:-webkit-any-link {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
