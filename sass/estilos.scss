@@ -17,32 +17,26 @@
 
 #destinos1{
     background-color: $colorsecundario;
-    .destinos1__titulo{
-        text-align: center;
-        color:$colorprincipal;
-        padding: 20px;
-    }
+    
     .destinos1__fotos img{
         margin: 20px;
+        &:hover{
+            animation-duration: 5s;
+            animation-name: opacidad;
+            transition-duration: 3s;
+        }
     
-    }
+    } 
     
 }
 
 
 
-.destinos1__fotos img:hover{
-    animation-duration: 3s;
-    animation-name: opacidad;
-    transition-duration: 3s;
-    
-    
 
-}
 
 @keyframes  opacidad{
     0%{
-        opacity: 1;
+        opacity: 0.5;
 
     }
     100%{
@@ -50,35 +44,55 @@
     }
 
 }
+.fotosblog{
+    padding: 10px;
+    &:hover{
+            animation-duration: 5s;
+            animation-name: opacidad;
+            transition-duration: 3s;
+        }
+    }
 
 
+
+.fotodestino:hover{
+    animation-duration: 5s;
+    animation-name: opacidad;
+    transition-duration: 3s;
+
+}
+
+@mixin sizes($width, $height)
+{
+    height: $height;
+    width: $width;
+}
 
 .destinos1__boton{
-    width: 10%;
-    height: 5%;
+    @include sizes(200px, 5% );
+    font-size: 80%;
     margin: 20px;
     text-align: center;
     padding: 10px;
-    border-radius: 40px;
+    border-radius: 30px;
     background-color: $colorprincipal;
     border-width: 0px;
     transition: all 1s;
     color: $colorsecundario;
+    &:hover{
+        background-color: $colortres;
+        a:-webkit-any-link {
+            color: $colorprincipal;
+            cursor: pointer;
+            text-decoration: none;
+    }
         a{
             color: $colorsecundario;
         }
-}
-
-.destinos1__boton:hover{
-    
-    
-    background-color: $colortres;
-    a:-webkit-any-link {
-        color: $colorprincipal;
-        cursor: pointer;
-        text-decoration: none;
     }
 }
+
+
 
 
 
@@ -113,7 +127,8 @@
     
     }
     .redes{
-        padding-top: 20px;
+
+        padding-bottom: 20px;
     }
     h2{
         color: white;
@@ -131,15 +146,19 @@
 
 
 
+.imacontacto{
+    padding: 5px;
+}
 
-
-
-
-
-#opciones{
+@mixin posicioncol {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+
+#opciones{
+    @include posicioncol;
     .opciones__titulo{
         color: $colorprincipal;
         margin: 30px;
@@ -156,11 +175,8 @@
 
 #federico{
     background-color: $colorprincipal;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include sizes(100%,400px );
+    @include posicioncol;
     justify-content: center;
     .federico__frase{
         color: white;
@@ -198,8 +214,13 @@
         color:$colorprincipal;
         font-size: 40px;
         padding: 30px;
-    
+        @media(max-width:768px){
+            font-size: 30px;
+        }
+        @media(max-width:480px){
+        font-size: 25px;
     }
+}
 }
 
 

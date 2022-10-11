@@ -1,19 +1,22 @@
-form{
+.formu1{
+    width: 100%;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: white;
-    background-color:$colortres;
+    color: $colorprincipal;
+    background-color:$colorsecundario;
+    border-radius: 2rem;
     h3{
         padding-bottom: 10px;
         font-size: 25px;
         text-transform: uppercase;
     }
     input{
-        width: 400px;
+        width: 80%;
         padding-top:5px;
         padding-bottom: 5px;
         margin: 5px;
+        border: none;
     }
     #mensaje{
         padding-top: 30px;
@@ -21,16 +24,14 @@ form{
         margin: 5px;
     }
     #enviar{
-        width: 100px;
+        width: 30%;
         margin: 15px;
+        background-color: gray;
+        color: white;
+        border-radius: 1rem;
     }
 
 }
-
-
-
-
-
 
 
 
@@ -39,7 +40,35 @@ form{
     color: white;
     text-align: center;
     padding: 20px;
+    input{
+        width: 50%;
+        padding-top:5px;
+        padding-bottom: 5px;
+        margin: 5px;
+        border: none;
+        border-radius: 1rem;
+    } 
+        #mensaje{
+            padding-top: 30px;
+            padding-bottom: 15px;
+            margin: 5px;
+        }
+        #enviar{
+            width: 30%;
+            margin: 15px;
+            background-color: gray;
+            color: white;
+            border-radius: 1rem;
+            border: none;
+        }
         h3{
+            padding-bottom: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+        h1{
+            padding-bottom: 10px;
+            font-size: 25px;
             text-transform: uppercase;
         }
 }

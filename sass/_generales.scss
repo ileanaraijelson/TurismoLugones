@@ -1,5 +1,5 @@
 * {
-    Margin:8px;
+    Margin:0px;
     padding:0;
 }
 body{
@@ -13,20 +13,20 @@ nav{
     color:$colorprincipal;
     background-color: $colorsecundario;
 
-
+    .nav-link{
+    margin-left: 25px;
+    margin-right: 25px;
+    }
 
     
 }
 
 
-.nav-link{
-    margin-left: 25px;
-    margin-right: 25px;
-}
+
 
 
 a:-webkit-any-link {
-   
+
     text-decoration: none;
 }
 
@@ -34,11 +34,12 @@ a:-webkit-any-link {
 
 .navbar-light .navbar-nav .nav-link{
     color: dimgrey;
+    &:hover{
+        color: $colorprincipal; 
+    }
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
-    color: $colorprincipal;
-}
+
 
 .navbar-collapse {
     background-color: $colorsecundario;
@@ -46,39 +47,63 @@ a:-webkit-any-link {
     padding-left: 12px;
 }
 
-
-
+.nav__logo{
+    padding-right: 15px;
+}
 
 
 
 
 footer{
     background-color:$colorsecundario ;
-    display: flex;
-    flex-direction: row;
-    .footer__bloque1{
-        display: flex;
-        flex-direction: column;
-        margin-left: 10%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 2%;
     
-    }
-    .footer__bloque2{
-        display: flex;
-        flex-direction: column;
-        align-items: right;
-        justify-content: left;
-        margin-right: 10%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: 50%;
-    
-    }
+    @media(max-width:480px){
+        display: grid;
+        grid-template-columns: 1fr ; 
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
 
 }
 
+    .footer__bloque2{
+        
+        margin: 2%;
+        width: 50%;
+        color: $colorprincipal;
+        
+        @media(max-width:480px){
+
+    }
+        
+        
+    }
+    .footmenu{
+        @extend .footer__bloque2;
+        
+        a:-webkit-any-link {
+        
+            color: $colorprincipal;
+            cursor: pointer;
+            text-decoration: none;
+            
+            
+
+        
+        }
+    }
+    .titufoot{
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: underline $colorprincipal 1px;
+    }
+}
 
 
 

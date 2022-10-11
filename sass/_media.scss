@@ -37,6 +37,26 @@
     }
 }
 
+.destinos1__titulo{
+    text-align: center;
+    color:$colorprincipal;
+    padding: 20px;
+    font-size: calc(1.375rem + 1.5vw);
+    @media(max-width:990px){
+        font-size: calc(1.100rem + 1.5vw);
+        
+    }
+    @media(max-width:768px){
+        font-size: calc(1.0rem + 1.5vw);
+    }
+    @media(max-width:480px){
+        font-size: calc(0.7rem + 1.5vw);
+    }
+
+}
+
+
+
 #info{
     background-color: $colorprincipal;
     display: grid;
@@ -50,6 +70,7 @@
         text-align: center;
         align-items: center;
     }
+    
 
 }
 
@@ -91,4 +112,34 @@
 
 
 
+
+.mapa{
+    width:2000px;
+    height: 604px;
+    @media(max-width:1280px){
+        width:1280px;
+        height: 604px; 
+    } 
+    @media(max-width:1024px){
+        width:1000px;
+        height: 604px; 
+    }
+    @media(max-width:990px){
+        width:990px;
+        height: 604px; 
+    }
+    @media(max-width:768px){
+        width:720px;
+        height: 604px; 
+    }
+
+    @media(max-width:480px){
+        width:420px;
+        height: 604px; 
+    }
+    @media(max-width:320px){
+        width:320px;
+        height: 604px; 
+}
+}
 
