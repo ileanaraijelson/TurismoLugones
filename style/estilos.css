@@ -127,6 +127,11 @@ footer .titufoot {
   font-size: 30px;
 }
 
+.modal-footer {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .formu1 {
   width: 100%;
   text-align: center;
@@ -246,6 +251,17 @@ footer .titufoot {
 .botonnacional:hover {
   background-color: lightgrey;
   color: #FF6633;
+}
+
+.formupconte {
+  display: flex;
+  justify-content: center;
+}
+
+.parrafoformu {
+  width: 80%;
+  text-align: center;
+  justify-content: center;
 }
 
 .destinos2__fotos {

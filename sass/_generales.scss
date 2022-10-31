@@ -156,3 +156,8 @@ footer{
     align-items: center;
     font-size: 30px;
 }
+
+.modal-footer {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
