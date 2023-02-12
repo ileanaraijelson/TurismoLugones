@@ -50,7 +50,7 @@ a:-webkit-any-link {
 footer {
   background-color: #f5f3f3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -138,13 +138,14 @@ footer .titufoot {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #FF6633;
-  background-color: #f5f3f3;
+  background-color: rgba(141, 140, 137, 0.384);
   border-radius: 2rem;
 }
 .formu1 h3 {
   padding-bottom: 10px;
   font-size: 25px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .formu1 input {
   width: 80%;
@@ -198,7 +199,7 @@ footer .titufoot {
   border: none;
 }
 .formulario__nosotros #enviar:hover {
-  background-color: orange;
+  background-color: rgba(255, 136, 0, 0.788);
   color: #f5f3f3;
 }
 .formulario__nosotros h3 {
@@ -222,6 +223,16 @@ footer .titufoot {
   color: white;
   justify-content: center;
   align-items: center;
+}
+.formuviajar h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+.formuviajar input:invalid {
+  background-color: white;
 }
 
 .btn {
@@ -336,6 +347,10 @@ footer .titufoot {
     text-align: center;
     align-items: center;
   }
+}
+#info .fotoagencia {
+  align-items: right;
+  text-align: right;
 }
 
 #nosotros {
@@ -454,20 +469,9 @@ a:-webkit-any-link {
   margin: 20px;
 }
 #destinos1 .destinos1__fotos img:hover {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: opacidad;
-          animation-name: opacidad;
+  animation-duration: 5s;
+  animation-name: opacidad;
   transition-duration: 3s;
-}
-
-@-webkit-keyframes opacidad {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 2;
-  }
 }
 
 @keyframes opacidad {
@@ -482,18 +486,14 @@ a:-webkit-any-link {
   padding: 10px;
 }
 .fotosblog:hover {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: opacidad;
-          animation-name: opacidad;
+  animation-duration: 5s;
+  animation-name: opacidad;
   transition-duration: 3s;
 }
 
 .fotodestino:hover {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: opacidad;
-          animation-name: opacidad;
+  animation-duration: 5s;
+  animation-name: opacidad;
   transition-duration: 3s;
 }
 

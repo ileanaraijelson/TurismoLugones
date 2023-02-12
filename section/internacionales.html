@@ -8,7 +8,7 @@
     <meta name="description" content="Viaja por el mundo con nosotros, elegi el destino que mas te guste, nosotros hacemos el resto">
     <title>Destinos Internacionales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../style/estilos.css"/>
 </head>
 <body>
@@ -119,11 +119,11 @@
         </button>
     </div>
 
-<form class=" row g-3 formuviajar">
-        <P class="personalizado">ARMA TU PAQUETE PERSONALIZADO</P>
-    <div class="col-md-12 col-sm-12 col-12 " >
+<form class=" row g-3 formuviajar" form action="https://formsubmit.co/ileraijelson@gmail.com" method="POST">
+        <P class="personalizado">COTIZÁ TU PAQUETE PERSONALIZADO</P>
+    <div class="col-md-6 col-sm-6 col-6 " >
         <label for="exampleDataList" class="form-label">Detalle del destino que desea visitar</label>
-<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="ej: Brasil">
+<input class="form-control" name="destino" list="datalistOptions" id="exampleDataList" placeholder="ej: Brasil" required>
 <datalist id="datalistOptions">
     <option value="Brasil">
     <option value="Bolivia">
@@ -144,29 +144,34 @@
     <option value="Tailandia">
 </datalist>
     </div>
+    <div class="col-md-6 col-sm-6 col-6">
+        <label for="nombre" class="form-label">origen</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="origen" name="lugarDeOrigen" required>
+    </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-6  text-label">
         <label for="exampleFormControlInput1" class="form-label">Fecha entrada:</label>
-        <input type="date" class="form-control" title="ingrese fecha de entrada">
+        <input type="date" class="form-control" title="ingrese fecha de entrada" name="fechaentrada">
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-label">
-    <label for="exampleFormControlInput1" class="form-label">Fecha salida:</label>
+    <label for="exampleFormControlInput1" class="form-label" name="fechaSalida">Fecha salida:</label>
     <input type="date" class="form-control" title="ingrese fecha de salida">
 </div>
+<!--
 <div class="form-check form-switch col-lg-12 col-md-12 col-sm-12 col-12">
-    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="" name="todavianodecisiofecha">
     <label class="form-check-label" for="flexSwitchCheckChecked">Todavía no he decidido la fecha</label>
-</div>
+</div>-->
 <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-label">
     <label for="exampleFormControlInput1" class="form-label">Pasajeros:</label>
-    <input type="number" value="2" class="form-control" title="ingrese cantidad de pasajeros">
+    <input type="number" min="1" required value="2" class="form-control" title="ingrese cantidad de pasajeros" name="pasajeros">
 </div>
 <div class="col-lg-6 col-md-6  col-sm-6 col-6 text-label">
 <label for="exampleFormControlInput1" class="form-label">Menores:</label>
-<input type="number" value="2" class="form-control" title="ingrese cantidad de pasajeros">
+<input type="number" value="2" class="form-control" title="ingrese cantidad de pasajeros" name="menores">
 </div>
 <div  class="col-lg-6 col-md-6  col-sm-12 col-12">
-    <label for="exampleFormControlInput1" class="form-label">Lugar de alojamiento:</label>
-    <select class="form-select" aria-label="Default select example">
+    <label for="exampleFormControlInput1" class="form-label">Lugar de alojamiento: </label>
+    <select class="form-select" required aria-label="Default select example" name="alojamiento">
         <option selected>Seleccione Lugar de alojamiento</option>
         <option value="1">Hotel 5 estrellas</option>
         <option value="2">Hotel 4 estrellas </option>
@@ -179,18 +184,20 @@
 </div>
 <div class="col-md-6 col-sm-12 col-12">
     <label for="nombre" class="form-label">Si tiene alojamiento preferencial detalle</label>
-    <input type="lugardepreferencia" class="form-control" id="exampleFormControlInput1" placeholder="*campo opcional">
+    <input type="lugardepreferencia" class="form-control" id="exampleFormControlInput1" placeholder="*campo opcional" name="alojamientopreferencial">
 </div>
 
 <div class="col-md-6 col-sm-12 col-12">
 <label for="nombre" class="form-label">Nombre y Apellido</label>
-        <input type="nombreyapellido" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre y apellido">
+        <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre y apellido" name="nombreyapellido">
 </div>
 <div class="col-md-6 col-sm-12 col-12">
 <label for="nombre" class="form-label">Mail</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su mail">
+        <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su mail" name="mail">
 </div>
 <button type="submit" class="btn btn-primary botonformuviajar">Cotizar</button>
+<input type="hidden" name="_next" value="https://www.lugonesturismo.com.ar/internacionales/"> <!--agregar aca el lugar del index-->
+                <input type="hidden" name="_captcha" value="false">
 </form>
     
     <footer> 
@@ -227,6 +234,19 @@
                 <p>Email: turismo@mlugones.com</p>
             </div>
     </div>
+    <form class="formu1" form action="https://formsubmit.co/ileraijelson@gmail.com" method="POST">
+        <h3>Recibí ofertas</h3>
+        <div class="formupconte"><p class="parrafoformu">Suscribite y aprovechá las ofertas y novedades exclusivas</p></div>
+        <label for="nombreyapellido">Nombre y apellido:</label><br>
+        <input name="nombreyapellido" type="text" required id="nombreyapellido" name="nombreyapellido"><br>
+        <label for="emaildelquequieresuscribirse">Correo electronico:</label><br>
+        <input type="email" required name="correo" id="email" name="Suscribirme"><br>
+        <label for="numerodecontacto">Número de teléfono:</label><br>
+        <input type = "number"    name="numero" id="numero" name="Suscribirme" required><br>
+        <input type="submit" id="enviar" value="Suscribirme">
+        <input type="hidden" name="_next" value="www.lugonesturismo.com.ar"> <!--agregar aca el lugar del index-->
+        <input type="hidden" name="_captcha" value="false">
+    </form>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
