@@ -346,6 +346,7 @@ footer .titufoot {
     grid-template-columns: 1fr;
     text-align: center;
     align-items: center;
+    width: 100%;
   }
 }
 #info .fotoagencia {
